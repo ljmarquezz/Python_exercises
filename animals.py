@@ -1,5 +1,3 @@
-import functools
-
 def solution (animals:str, f):
     animals_list = list(map(lambda x:x.lower(), animals.split()))
     animals_wo_forbidden = list(filter(lambda x:not x in f, animals_list))
